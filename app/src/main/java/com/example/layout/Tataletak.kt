@@ -33,5 +33,11 @@ fun TataletakColumn(modifier: Modifier) {
     }
 }
 
+@Composable
+fun TataletakRow() {
+
+}
+
+
 class Tataletak {
 }
