@@ -75,10 +75,15 @@ fun TataletakColumnRow(modifier: Modifier) {
             Text(text = "Komponen2")
             Text(text = "Komponen3")
             Text(text = "Komponen4")
-
         }
     }
 }
+
+@Composable
+fun TataletakColumRow() {
+
+}
+
 
 
 
