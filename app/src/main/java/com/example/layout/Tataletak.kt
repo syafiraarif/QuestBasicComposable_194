@@ -1,4 +1,4 @@
-package com.example.mylayout
+package com.example.layout
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,4 +23,5 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-
+class Tataletak {
+}
