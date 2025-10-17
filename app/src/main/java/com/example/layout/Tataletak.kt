@@ -65,9 +65,10 @@ fun TataletakBox(modifier: Modifier) {
 @Composable
 fun TataletakColumnRow() {
     Column() {
-
+        // Baris1
+        Row() {
+        }
     }
-
 }
 
 
