@@ -125,16 +125,17 @@ fun TataletakRowColum(modifier: Modifier) {
 @Composable
 fun TataletakBoxColumRow(modifier: Modifier) {
     val gambar = painterResource(id = R.drawable.yiran)
+
     Column {
+        // Bagian atas (Box kuning + teks)
         Box(
             modifier = modifier
                 .fillMaxWidth()
-                .height(height = 110.dp)
+                .height(110.dp)
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
         ) {
-
-            Column() {
+            Column {
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
@@ -153,34 +154,35 @@ fun TataletakBoxColumRow(modifier: Modifier) {
                     Text(text = "Col1.Row2.Komponen3")
                 }
             }
-            Spacer(modifier = Modifier.height(height = 10.dp))
-
-            Box(
-                modifier = modifier
-                    .fillMaxWidth()
-                    .height(height = 300.dp)
-                    .background(color = Color.Cyan),
-                contentAlignment = Alignment.Center
-            ) {
-                Image(painter = gambar,
-                    contentDescription = null,
-                    contentScale = ContentScale.Fit)
-                Text(text = "My Music",
-                    fontSize = 50.sp,
-                    color = Color.Red,
-                )
-            }
         }
 
+        // Spasi antar elemen
+        Spacer(modifier = Modifier.height(10.dp))
+
+        // Bagian bawah (Box cyan + gambar dan teks)
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit
+            )
+            Text(
+                text = "My Music",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
     }
 }
-
-
-
-
-
-
-
 
 
 class Tataletak {
