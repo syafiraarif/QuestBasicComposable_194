@@ -47,8 +47,13 @@ fun TataletakRow(modifier: Modifier) {
 }
 
 @Composable
-fun TataletakBox() {
-    Box() {
+fun TataletakBox(modifier: Modifier) {
+    Box(
+        modifier = modifier
+        .fillMaxWidth()
+        .fillMaxHeight(),
+        contentAlignment = Alignment.Center
+    ) {
         Text(text = "Box 1")
         Text(text = "Box 2")
         Text(text = "Column 1")
