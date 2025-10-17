@@ -48,6 +48,10 @@ fun TataletakRow(modifier: Modifier) {
 
 @Composable
 fun TataletakBox() {
+    Box() {
+
+    }
+
 
 }
 
