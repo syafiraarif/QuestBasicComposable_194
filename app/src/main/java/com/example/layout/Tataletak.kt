@@ -84,12 +84,16 @@ fun TataletakColumRow() {
     Column() {
         //Baris1
         Row() {
-
+            Text(text = "KomponenBaris1")
+            Text(text = "KomponenBaris2")
+            Text(text = "KomponenBaris3")
         }
 
         //Baris2
         Row() {
-
+            Text(text = "KomponenBaris1s2")
+            Text(text = "KomponenBaris2s2")
+            Text(text = "KomponenBaris3s2")
         }
     }
 
