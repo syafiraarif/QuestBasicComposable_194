@@ -81,6 +81,18 @@ fun TataletakColumnRow(modifier: Modifier) {
 
 @Composable
 fun TataletakColumRow() {
+    Column() {
+        //Baris1
+        Row() {
+
+        }
+
+        //Baris2
+        Row() {
+
+        }
+    }
+
 
 }
 
